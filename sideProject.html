@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken的個人網頁</title>
+
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+ 
+    <!-- 標題欄 icon -->
+    <link rel="icon" href="./img/icons-computer.png">
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-left">
+          <a href="./index.html"><img
+            class="nav-img"
+            src="./img/icons-computer.png"
+            alt="Image"
+          />Home</a>
+          <a href="./note.html">Note</a>
+          <a class="active" href="#">Side Project</a>
+        </div>
+        <div class="nav-right">
+          <a
+            href="https://github.com/KenLin1996"
+            class="nav-link"
+            target="_blank"
+          >
+            <img src="./img/github1.png" alt="pic" class="nav-img" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ken-lin-a41813183/"
+            alt="my linkden"
+            class="nav-link"
+            target="_blank"
+          >
+            <img src="./img/linkedin.png" alt="pic" class="nav-img" />
+          </a>
+          <img
+            src="./img/icons-download.png"
+            alt=""
+            class="nav-link"
+            onclick="downloadFile()"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <main class="sideProject-main">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="搜尋 Project..." />
+        <ul id="search-results"></ul>
+      </div>
+
+      <div class="project" id="project-list">
+        <a href="./Project 貪食蛇遊戲基礎版/index.html" target="_blank">
+          <div class="porject-block">
+            <div class="snake-img">
+              <img src="./img/snake2.png" alt="" />
+            </div>
+            <div class="snake-content">
+              <h3>懷舊網頁遊戲 貪吃蛇遊戲</h3>
+              <p>
+                經典懷舊網頁遊戲，操作方式是利用方向鍵來控制蛇的移動位置，遊戲方式是讓蛇吃到果實，來增加分數。蛇碰到自己的身體（有些版本是撞到牆）即會結束遊戲，這是基本的遊戲規則。而這個版本我增加了一些元素，例如在分數xxx的時候，會出現xxx，諸如此類的設計大家感興趣的話可以來玩玩看。
+              </p>
+              <div class="skill-tag">
+                <p class="p-html">#HTML</p>
+                <p class="p-css">#CSS</p>
+                <p class="p-js">#JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- <a href="./Project 貪食蛇遊戲基礎版/index.html" target="_blank">
+          <div class="porject-block">
+            <div class="snake-img">
+              <img src="./img/snake.png" alt="" />
+            </div>
+            <div class="snake-content">
+              <h3>懷舊網頁遊戲 貪吃蛇遊戲</h3>
+              <p>
+                經典懷舊網頁遊戲，操作方式是利用方向鍵來控制蛇的移動位置，遊戲方式是讓蛇吃到果實，來增加分數。蛇碰到自己的身體（有些版本碰到牆壁）即會結束遊戲，這是基本的遊戲規則。
+                而這個版本我增加了一些元素，例如在分數xxx的時候，會出現xxx，諸如此類的設計大家感興趣的話可以來玩玩看。
+              </p>
+              <div class="skill-tag">
+                <p class="p-html">#HTML</p>
+                <p class="p-css">#CSS</p>
+                <p class="p-js">#JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="./Project 貪食蛇遊戲基礎版/index.html" target="_blank">
+          <div class="porject-block">
+            <div class="snake-img">
+              <img src="./img/snake.png" alt="" />
+            </div>
+            <div class="snake-content">
+              <h3>網頁遊戲 貪吃蛇遊戲</h3>
+              <p>
+                經典懷舊網頁遊戲，操作方式是利用方向鍵來控制蛇的移動位置，遊戲方式是讓蛇吃到果實，來增加分數。蛇碰到自己的身體（有些版本碰到牆壁）即會結束遊戲，這是基本的遊戲規則。
+                而這個版本我增加了一些元素，例如在分數xxx的時候，會出現xxx，諸如此類的設計大家感興趣的話可以來玩玩看。
+              </p>
+              <div class="skill-tag">
+                <p class="p-html">#HTML</p>
+                <p class="p-css">#CSS</p>
+                <p class="p-js">#JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./Project 貪食蛇遊戲基礎版/index.html" target="_blank">
+          <div class="porject-block">
+            <div class="snake-img">
+              <img src="./img/snake.png" alt="" />
+            </div>
+            <div class="snake-content">
+              <h3>你好食</h3>
+              <p>
+                經典懷舊網頁遊戲，操作方式是利用方向鍵來控制蛇的移動位置，遊戲方式是讓蛇吃到果實，來增加分數。蛇碰到自己的身體（有些版本碰到牆壁）即會結束遊戲，這是基本的遊戲規則。
+                而這個版本我增加了一些元素，例如在分數xxx的時候，會出現xxx，諸如此類的設計大家感興趣的話可以來玩玩看。
+              </p>
+              <div class="skill-tag">
+                <p class="p-html">#HTML</p>
+                <p class="p-css">#CSS</p>
+                <p class="p-js">#JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./Project 貪食蛇遊戲基礎版/index.html" target="_blank">
+          <div class="porject-block">
+            <div class="snake-img">
+              <img src="./img/snake.png" alt="" />
+            </div>
+            <div class="snake-content">
+              <h3>你好</h3>
+              <p>
+                經典懷舊網頁遊戲，操作方式是利用方向鍵來控制蛇的移動位置，遊戲方式是讓蛇吃到果實，來增加分數。蛇碰到自己的身體（有些版本碰到牆壁）即會結束遊戲，這是基本的遊戲規則。
+                而這個版本我增加了一些元素，例如在分數xxx的時候，會出現xxx，諸如此類的設計大家感興趣的話可以來玩玩看。
+              </p>
+              <div class="skill-tag">
+                <p class="p-html">#HTML</p>
+                <p class="p-css">#CSS</p>
+                <p class="p-js">#JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div> -->
+    </main>
+
+    <script src="./project.js"></script>
+  </body>
+</html>

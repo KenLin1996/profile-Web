@@ -1,0 +1,368 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+.active {
+  color: rgb(255, 204, 0);
+}
+
+body {
+  font-family: "Nots TC", sans-serif, "標楷體";
+  background-color: #0f416a;
+}
+
+header {
+  /*nav bar 固定在頂部*/
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b74803;
+  padding: 9px 10px;
+}
+header .nav-left {
+  display: flex;
+  justify-content: flex-start;
+}
+header .nav-left a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  transition: all 0.1s ease;
+  font-size: 1.25em;
+  position: relative;
+  margin-right: 80px;
+}
+header .nav-left a:hover {
+  transition: 0.3s;
+  color: rgb(255, 204, 0);
+}
+header .nav-left a .nav-img {
+  margin-left: 20px;
+}
+header .nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .nav-link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+header .nav-img {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+main {
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+}
+main .main-area {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 94.7vh;
+}
+main .main-area .info {
+  margin-top: 8%;
+}
+main .main-area .info h1 {
+  line-height: 130px;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #cc6d3d;
+}
+main .main-area .info h2 {
+  font-size: 1rem;
+  color: white;
+}
+main .main-area .info .button {
+  animation: jump 1s infinite;
+}
+main .main-area .info .button {
+  display: flex;
+  overflow: hidden;
+  margin: 50px 0px;
+  padding: 10px 35px;
+  cursor: pointer;
+  transition: all 150ms linear;
+  border: 0 none;
+  border-radius: 35px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  justify-content: center;
+  align-items: center;
+}
+main .main-area .info .button:hover {
+  transition: all 150ms linear;
+  opacity: 0.85;
+}
+main .main-area .info .button:active {
+  transition: all 150ms linear;
+  opacity: 0.75;
+}
+main .main-area .info .button.-dark {
+  color: #ffffff;
+  background: #161616;
+}
+main .main-area img {
+  flex-basis: 300px;
+  width: 20vw;
+  height: 25%;
+  margin-top: 15%;
+}
+main .second-area {
+  position: absolute;
+  background-color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: 1s;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+}
+main .second-area div.about-me {
+  width: 70%;
+  padding-top: 20px;
+  text-align: center;
+}
+main .second-area div.about-me p {
+  line-height: 30px;
+  font-size: 16px;
+}
+main .second-area div.skill {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5px;
+}
+main .second-area div.skill p {
+  font-weight: bold;
+}
+main .second-area div.skill div.left {
+  margin: auto;
+}
+main .second-area div.skill div.left img {
+  width: 32px;
+  height: 40px;
+  margin: 5px;
+  margin: 10px 30px;
+}
+
+main.note {
+  display: flex;
+  padding: 0px 10px;
+}
+main.note .note_left {
+  padding: 5px 5px;
+  flex: 1;
+  text-align: center;
+}
+main.note .note_left ul {
+  margin-top: 5px;
+  list-style-type: none;
+}
+main.note .note_left ul button {
+  color: burlywood;
+  background-color: transparent;
+  border: none;
+  font-size: 1.25em;
+  cursor: pointer;
+  margin-top: 30px;
+  position: relative;
+}
+main.note .note_left ul button:focus {
+  color: #ffd700;
+}
+main.note .note_left ul button:hover {
+  color: #ffd700;
+}
+main.note .note_left ul button:after {
+  margin-top: 4px;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  height: 2px;
+  width: 130%;
+  opacity: 0;
+  background: gray;
+  transition: 0.3s;
+}
+main.note .note_left ul button:hover:after {
+  opacity: 1;
+}
+main.note .note_right {
+  padding: 15px 20px;
+  flex: 7;
+}
+main.note .note_right h2 {
+  font-weight: bold;
+}
+main.note .note_right div.content {
+  position: relative;
+  background-color: #a3b4c8;
+  padding: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+main.note .note_right div.content ::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: #a3b4c8;
+  position: absolute;
+  left: -15px;
+  top: 0;
+}
+main.note .note_right div.content a {
+  text-decoration: none;
+  color: black;
+}
+main.note .note_right div.content .describe p {
+  margin-top: 8px;
+  line-height: 30px;
+}
+main.note .note_right div.note_right_resource {
+  display: flex;
+  margin-top: 20px;
+}
+main.note .note_right div.note_right_resource p {
+  margin: 0px 12px 0px 0px;
+  padding: 1px 8px;
+  background-color: wheat;
+  border-radius: 15px;
+}
+
+.sideProject-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sideProject-main .search-container {
+  display: flex;
+  margin: 10px 40px 15px 0px;
+  width: 1500px;
+  justify-content: end;
+}
+.sideProject-main .search-container input {
+  display: flex;
+  padding-left: 25px;
+  width: 300px;
+  height: 35px;
+  outline: none;
+}
+.sideProject-main .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sideProject-main .project li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  width: 900px;
+}
+.sideProject-main .project a {
+  margin: 0px 40px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  background-color: #a3b4c8;
+  border-radius: 10px;
+  transition: box-shadow 0.25s ease-in-out;
+}
+.sideProject-main .project a:hover {
+  box-shadow: 4px 4px 4px black;
+}
+.sideProject-main .project a:active {
+  transform: scale(0.96);
+}
+.sideProject-main .project a .snake-img img {
+  border-radius: 10px;
+  width: 270px;
+  height: 200px;
+}
+.sideProject-main .project a .porject-block {
+  display: flex;
+  height: 100%;
+}
+.sideProject-main .project a .porject-block .snake-content {
+  height: 100%;
+  padding: 10px 25px;
+}
+.sideProject-main .project a .porject-block .snake-content p {
+  padding-right: 2px;
+  line-height: 30px;
+}
+.sideProject-main .project a .porject-block .snake-content h3 {
+  font-size: 1.8em;
+  transition: opacity 0.3s ease;
+}
+.sideProject-main .project a .porject-block .snake-content h3:hover {
+  opacity: 0.6;
+}
+.sideProject-main .project a .skill-tag {
+  display: flex;
+  height: auto;
+  padding: 10px 0px;
+}
+.sideProject-main .project a .skill-tag p {
+  margin-right: 10px;
+}
+.sideProject-main .project a .skill-tag .p-html {
+  color: #e34c26;
+}
+.sideProject-main .project a .skill-tag .p-css {
+  color: #1572b6;
+}
+.sideProject-main .project a .skill-tag .p-js {
+  color: #ffd700;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

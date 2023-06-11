@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken的個人網頁</title>
+
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 標題欄 icon -->
+    <link rel="icon" href="./img/icons-computer.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-left">
+          <a class="active" href="#"
+            ><img
+              class="nav-img"
+              src="./img/icons-computer.png"
+              alt="Image"
+            />Home</a
+          >
+          <a href="./note.html">Note</a>
+          <a href="./sideProject.html">Side Project</a>
+        </div>
+        <div class="nav-right">
+          <a
+            href="https://github.com/KenLin1996"
+            class="nav-link"
+            target="_blank"
+          >
+            <img src="./img/github1.png" alt="pic" class="nav-img" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ken-lin-a41813183/"
+            alt="my linkden"
+            class="nav-link"
+            target="_blank"
+          >
+            <img src="./img/linkedin.png" alt="pic" class="nav-img" />
+          </a>
+          <img
+            src="./img/icons-download.png"
+            alt=""
+            class="nav-link"
+            onclick="downloadFile()"
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="main-area">
+        <div class="info">
+          <h1>Welcome to <br />Ken's study diary</h1>
+          <h2>
+            "Success is not final, failure is not fatal: it is the courage to
+            continue that counts." ― Winston Churchill
+          </h2>
+          <button id="animate-button" class="button -dark center">
+            About Me
+          </button>
+        </div>
+        <img src="./img/網路素材.svg" alt="人像圖案" />
+      </section>
+      <section class="second-area">
+        <div class="about-me">
+          <p>
+            我是Ken，畢業於輔仁大學哲學系，在大學時完全沒有寫程式的經驗。在2022年底接觸了前端開發，用程式將想像中的畫面製作出來是件很有成就感的事。
+            這裡會記錄我學習過程中做的 SideProject
+            、對我有幫助的筆記或還沒看的文章。
+          </p>
+        </div>
+        <div class="skill">
+          <div class="left">
+            <p>Programming Skills</p>
+
+            <img src="./img/HTML.png" alt="" />
+            <img src="./img/CSS.png" alt="" />
+            <img src="./img/JS.png" alt="" />
+            <img src="./img/REACT.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken的個人網頁</title>
+
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 標題欄 icon -->
+    <link rel="icon" href="./img/icons-computer.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-left">
+          <a href="./index.html"
+            ><img
+              class="nav-img"
+              src="./img/icons-computer.png"
+              alt="Image"
+            />Home</a
+          >
+          <a class="active" href="#">Note</a>
+          <a href="./sideProject.html">Side Project</a>
+        </div>
+        <div class="nav-right">
+          <a
+            href="https://github.com/KenLin1996"
+            class="nav-link"
+            target="_blank"
+          >
+            <img src="./img/github1.png" alt="pic" class="nav-img" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ken-lin-a41813183/"
+            alt="my linkden"
+            class="nav-link"
+            target="_blank"
+          >
+            <img src="./img/linkedin.png" alt="pic" class="nav-img" />
+          </a>
+          <img
+            src="./img/icons-download.png"
+            alt=""
+            class="nav-link"
+            onclick="downloadFile()"
+          />
+        </div>
+      </nav>
+    </header>
+    <main class="note">
+      <section class="note_left">
+        <div class="note_menu">
+          <ul>
+            <li><button id="btn1" class="menu-button">HTML</button></li>
+            <li><button id="btn2" class="menu-button">CSS</button></li>
+            <li><button id="btn3" class="menu-button">JavaScript</button></li>
+            <li><button id="btn4" class="menu-button">React</button></li>
+          </ul>
+        </div>
+      </section>
+      <section class="note_right">
+        <div class="content note_right_content_1">
+          <div class="describe">
+            <a
+              href="https://developer.mozilla.org/zh-TW/docs/Learn/HTML"
+              target="_blank"
+              ><h2>HTML 基本概念</h2>
+              <p>
+                這篇的作用是可以先用全面的角度去理解對於Web來說HTML的作用。也能藉此去吸收想要建立一個Web除了要具備HTML的知識外還不可少了CSS、JS等要素。
+              </p></a
+            >
+          </div>
+          <div class="note_right_resource">
+            <p class="web">MDN</p>
+            <p class="author">MDN工程師</p>
+          </div>
+        </div>
+
+        <div class="content note_right_content_1">
+          <div class="describe">
+            <a
+              href="http://jinjin.mepopedia.com/~jinjin/webdesign-notes/html.html"
+              alt="網頁"
+              target="_blank"
+              ><h2>HTML 架構及標籤</h2>
+              <p>
+                HTML架構清楚的重要性：<br />
+                維護性：可以使網頁更容易維護和修改。清晰的結構可以使開發人員更容易理解和編輯網頁，並且可以方便地進行更改、新增或刪除內容。
+                可擴展性：可以使網頁更具可擴展性。當需要添加新功能或調整現有功能時，有一個明確的結構可以讓開發人員更容易尋找和修改相關的部分，而不會影響到整個網頁。
+                可讀性：提高代碼的可讀性。良好的縮進、有意義的標籤和屬性命名，以及結構化的組織方式，使代碼更易於理解和維護且也助於團隊合作和代碼重用。
+              </p></a
+            >
+          </div>
+          <div class="note_right_resource">
+            <!-- <h4>資料來源</h4> -->
+            <p class="web">取自網路</p>
+            <p class="author">JinJinWang</p>
+          </div>
+        </div>
+
+        <div class="content note_right_content_2">
+          <div class="describe">
+            <a
+              href="https://ithelp.ithome.com.tw/articles/10253500"
+              target="_blank"
+              ><h2>CSS position到底是什麼？ 關於Relative 、Absolute</h2>
+              <p>
+                在網頁中
+                position的用途是設定「物件定位時所要的參考對象」，預設狀態下物件的位置是依據資料流來做排列，也就是跟隨資料做排列，如果對物件添加了不同的
+                position
+                之後，就能改變物件所參考的空間對象，來去改變物件的位置。
+              </p></a
+            >
+          </div>
+          <div class="note_right_resource">
+            <!-- <h4>資料來源</h4> -->
+            <p class="web">iT邦幫忙</p>
+            <p class="author">CSScoke</p>
+          </div>
+        </div>
+        <div class="content note_right_content_2">
+          <div class="describe">
+            <a
+              href="https://ithelp.ithome.com.tw/articles/10267398"
+              target="_blank"
+              ><h2>CSS Flex到底是什麼？justify-content 、align-item</h2>
+              <p>
+                CSS Flex是個很常用的排版工具，justify-content 和 align-item
+                在我剛學習的時候蠻常會忘記它們的作用。所以在不熟悉的情況下，有圖示的筆記就顯得尤為重要。
+              </p></a
+            >
+          </div>
+          <div class="note_right_resource">
+            <!-- <h4>資料來源</h4> -->
+            <p class="web">iT邦幫忙</p>
+            <p class="author">iT邦幫忙的某位作者</p>
+          </div>
+        </div>
+
+        <div class="content note_right_content_2">
+          <div class="describe">
+            <a
+              href="https://www.oxxostudio.tw/articles/201803/css-animation.html"
+              target="_blank"
+              ><h2>CSS Animation 基本介紹</h2>
+              <p>
+                這篇文章將會針對 CSS
+                的動畫進行完整的使用探討，從基礎的使用，一直到 JavaScript
+                的操作方法都有一些介紹。
+              </p></a
+            >
+          </div>
+          <div class="note_right_resource">
+            <!-- <h4>資料來源</h4> -->
+            <p class="web">取自網路</p>
+            <p class="author">oxxo</p>
+          </div>
+        </div>
+        <div class="content note_right_content_3">
+          <div class="describe">
+            <a
+              href="https://medium.com/%E5%BF%AB%E6%A8%82%E5%AD%B8%E7%A8%8B%E5%BC%8F/javascript%E5%85%A5%E9%96%80%E7%B3%BB%E5%88%97-%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98%E8%88%87%E8%AA%9E%E6%B3%95%E6%95%B4%E7%90%86-40707a39afd0"
+              target="_blank"
+              ><h2>JavaScript入門系列：基礎知識與語法整理筆記</h2>
+              <p>
+                這邊文章適合對於JavaScript有興趣也有一點基礎的開發者，以下除了介紹何謂JavaScript外，本篇將運用簡單的範例程式，讓大家可以初步認識JavaScript。
+              </p></a
+            >
+          </div>
+          <div class="note_right_resource">
+            <!-- <h4>資料來源</h4> -->
+            <p class="web">medium</p>
+            <p class="author">Samuel</p>
+          </div>
+        </div>
+        <div class="content note_right_content_4">
+          <div class="describe">
+            <a
+              href="https://ithelp.ithome.com.tw/articles/10186299"
+              target="_blank"
+              ><h2>快速學會 React 基礎</h2>
+              <p>
+                React 是用來建置 UI 的 JavaScript
+                Library，它不依賴在任何的平台之上 (但當然必須有 JavaScript
+                Runtime)，利用 react-dom、react-native 等等的 Library
+                來實現學一次就能寫任何平台的目標。
+              </p></a
+            >
+          </div>
+          <div class="note_right_resource">
+            <!-- <h4>資料來源</h4> -->
+            <p class="web">iT邦幫忙</p>
+            <p class="author">C.T.Lin</p>
+          </div>
+        </div>
+        <div class="content note_right_content_4">
+          <div class="describe">
+            <a
+              href="https://zh-hant.legacy.reactjs.org/tutorial/tutorial.html"
+              target="_blank"
+              ><h2>學習指南：React 介紹</h2>
+              <p>
+                在這份學習指南中，會練習做一個小遊戲。在這份學習指南中，所學到的技術是
+                React 應用程式的基礎，掌握基礎後應該會讓我對 React
+                有更深入的了解。
+              </p></a
+            >
+          </div>
+          <div class="note_right_resource">
+            <!-- <h4>資料來源</h4> -->
+            <p class="web">React</p>
+            <p class="author">React工程師</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./note.js"></script>
+    <!-- <script src="./try.js"></script> -->
+  </body>
+</html>
