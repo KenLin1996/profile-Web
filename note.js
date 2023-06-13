@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
   if (window.scrollY === 0) {
     nav.style.boxShadow = "";
   } else {
-    nav.style.boxShadow = "0, 10px, 6px, -6px, white";
+    nav.style.boxShadow = "0px 3px 10px white";
   }
 });
 
